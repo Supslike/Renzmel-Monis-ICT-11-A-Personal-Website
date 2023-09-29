@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital@1&family=Tangerine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital@1&family=Oswald&family=Tangerine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital@1&family=Barlow+Condensed&family=Oswald&family=Tangerine&display=swap');
+
+
+* {
+  top: 0;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+img {
+  box-shadow: 0px 10px 10px black;
+  border-radius: 10px;
+}
+
+body {
+  background-color: #004643;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:active {
+  color: white;
+  text-decoration: none;
+}
+
+nav {
+  background-color: transparent;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .name {
+  display: flex;
+}
+
+nav p {
+  margin-left: 20px;
+  color: #e8e4e6;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 175%;
+}
+
+nav .navigations {
+  margin-right: 10px;
+  display: flex;
+}
+
+nav .navigations a {
+  margin-right: 20px;
+  border-radius: 10px;
+  padding: 10px;
+  transition: background-color 0.3s;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 150%;
+}
+
+nav .navigations a:hover {
+  background-color: #016c66;
+}
+
+.main_page {
+  background-color: #004643;
+  width: 100%;
+  height: 89vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.main_page .information {
+  padding-bottom: 8%;
+}
+
+.main_page img {
+  border-radius: 20px;
+  margin-left: 4%;
+  margin-bottom: 3%;
+  border: 3px solid black;
+}
+
+.main_page h1 {
+  margin-bottom: 2%;
+  font-size: 20vh;
+  font-family: 'Tangerine', cursive;
+  font-weight: 300;
+  text-shadow: 2px 2px 0 black;
+  color: #fffffe;
+}
+
+.main_page p {
+  font-size: 3vh;
+  margin-right: 4%;
+  margin-left: 4%;
+  color: #abd1c6;
+  text-align: left;
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.main_page a {
+  padding: 3% 10%;
+  background-color: #f9bc60;
+  border-radius: 5px;
+  color: #001e1d;
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-weight: bold;
+}
+
+.wrapper {
+  padding-top: 8%;
+  padding-left: 5%;
+  display: flex;
+  justify-content: left;
+}
+
+.sections {
+  background-color: #abd1c6;
+}
+
+.sections h2 {
+  color: #001e1d;
+}
+
+.sections p {
+  color: #0f3433;
+}
+
+#aboutme img {
+  height: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+  border: 3px solid black;
+}
+
+#aboutme {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+}
+
+.image-wrapper {
+  height: 500px;
+  width: 40%;
+  margin-left: 2%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#aboutme .information {
+  padding: 1px;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 5%;
+  padding-bottom: 5%;
+  width: 75%;
+  background-color: #004643;
+  border-radius: 10px;
+  border: 3px solid black;
+  box-shadow: 0px 10px 10px gray;
+}
+
+#aboutme h2 {
+  font-size: 300%;
+  color: #fffffe;
+  margin-top: 5%;
+  margin-left: 5%;
+  font-weight: bold;
+  font-family: 'Caveat', cursive;
+  font-size: 250%;
+}
+
+#aboutme p {
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  color: #abd1c6;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 150%
+}
+
+#achievements {
+  background-color: #004643;
+  height: 100vh;
+  text-align: center;
+}
+
+#achievements p {
+  color: #abd1c6;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 125%;
+}
+
+#achievements img {
+  margin-bottom: 4%;
+  width: 30vh;
+  height: 30vh;
+  border: 3px solid black;
+}
+
+#achievements h2 {
+  padding-top: 2%;
+  font-family: 'Caveat', cursive;
+  font-weight: 500;
+  font-size: 10vh;
+  color: #fffffe;
+  text-shadow: 1px 1px 0 #5e5e5e;
+}
+
+#achievements h3 {
+  color: #001e1d;
+  font-size: 175%;
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-weight: bold;
+  margin-bottom: 1%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.achievement {
+  margin-top: 4%;
+  display: flex;
+  justify-content: center;
+}
+
+.achievement p {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 125%;
+  color: #0f3433;
+  margin-left: 4%;
+  margin-right: 4%;
+
+}
+
+#achievements .information {
+  width: 100%;
+  margin-bottom: 5%;
+} 
+
+#achieved {
+  border-radius: 20px;
+  padding: 2% 0.5%;
+  background-color: #e8e4e6;
+  box-shadow: 0px 10px 10px rgb(51, 50, 50);
+  border: 3px solid black;
+  margin-right: 3%;
+  min-width: 25%;
+  max-width: 25%;
+  margin-left: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: transform 0.5s;
+}
+
+#achieved:hover {
+  transform: scale(1.2);
+}
+
+#achieved p {
+  color: #0f3433;
+}
+
+#family {
+  background-color: #abd1c6;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#family .information{
+  margin-top: 7%;
+  align-self: flex-start;
+  width: 40%;
+}
+
+#family h2 {
+  font-family: 'Caveat', cursive;
+  font-size: 500%;
+  margin-bottom: 10%;
+}
+
+#family p {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 150%;
+  color: #0f3433;
+  text-align: left;
+}
+
+#family img {
+  height: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+  border: 3px solid black;
+}
+
+#family .img-wrapper {
+  height: 500px;
+  width: 40%;
+}
+
+#socials {
+  background-color: #004643;
+  height: 50vh;
+  text-align: left;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#socials h2 {
+  padding-top: 2%;
+  font-family: 'Caveat', cursive;
+  font-weight: 500;
+  font-size: 10vh;
+  color: #fffffe;
+  text-shadow: 1px 1px 0 #5e5e5e;
+}
+
+#socials p {
+  color: #abd1c6;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 125%;
+}
+
+#socials .social {
+  display: flex;
+  flex-direction: column;
+}
+
+#socials .social a {
+  font-size: 125%;
+  color: #abd1c6;
+  margin-bottom: 1%;
+  transition: color 0.5;
+}
+
+#socials .social a:hover {
+  color: #f9bc60;
+}
