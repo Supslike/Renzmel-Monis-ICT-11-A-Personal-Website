@@ -24,7 +24,7 @@ function toggleMenu() {
     }   
     navigations.style.animation = isMenuOpen ? 'nav-bar-open 0.5s ease' : 'nav-bar-close 0.5s ease';
     let bar_icon = document.getElementById("bar-icon");
-    bar_icon.src = isMenuOpen ? '/static/open.svg' : '/static/close.svg'
+    bar_icon.src = isMenuOpen ? '/Renzmel-Monis-ICT-11-A-Personal-Website/static/open.svg' : '/Renzmel-Monis-ICT-11-A-Personal-Website/static/close.svg'
   }
 
 navigations.addEventListener('animationend', function () {
