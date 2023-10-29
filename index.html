@@ -6,10 +6,10 @@
   <title>Personal Website</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="static/profile.jpg" type="image/jpeg">
-  <meta property='og:title' content='ICT 11 - A: Assignments'>
+  <meta property='og:title' content='Renzmel-Monis-ICT-11-A-Personal-Website'>
   <meta property='og:image' content='https://cdn.discordapp.com/attachments/816810339596894210/1156979911458824234/profile.jpg?ex=6516f102&is=65159f82&hm=61b8ae3599dd9be3186bc036bb3c43722a97751a1e76ea539e0875f3d37ebae1&'>
   <meta property='og:description' content='This is my project for Computer Programming. Making a personal website using HTML and CSS.'>
-  <meta property='og:url' content='https://ict-a-assignments.supslike.repl.co/'>
+  <meta property='og:url' content='https://supslike.github.io/Renzmel-Monis-ICT-11-A-Personal-Website/'>
   <meta property='og:image:width' content='500'>
   <meta property='og:image:height' content='500'>
   <meta property="og:type" content='website'>
@@ -17,13 +17,16 @@
 <body>
   <nav>
     <div class="name">
-    <p>👨‍🎓 Renzmel L. Monis</p>
-  </div>
+      <p>👨‍🎓 Renzmel L. Monis</p>
+    </div>
     <div class="navigations">
-      <a href="#aboutme">Home</a>
-      <a href="#achievements">Achievements</a>
-      <a href="#family">Family</a>
-      <a href="#socials">Socials</a>
+      <a href="index.html" id="home">Home</a>
+      <a href="webpages/school/index.html" id="school">School</a>
+      <a href="webpages/anime/index.html" id="anime">Anime</a>
+      <a href="webpages/game/index.html" id="game">Games</a>
+    </div>
+    <div class="menu-icon" id="menu-toggle">
+      <img src="static/close.svg" alt="Panel Icon" id="bar-icon" width="50px" height="50px">
     </div>
   </nav>
   <div class="main_page">
@@ -103,5 +106,9 @@
       </div>
     </div>
   </div>
+  <div class="top-button">
+    <button onclick="topFunction()" id="top-button" title="Go to top">Top</button>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>

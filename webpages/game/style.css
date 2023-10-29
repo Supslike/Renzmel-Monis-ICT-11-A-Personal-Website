@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed&family=Oswald&family=Bai+Jamjuree:ital@1&family=Caveat:wght@700&family=Tangerine&display=swap');
+
+* {
+    top: 0;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+  
+img {
+    box-shadow: 0px 10px 10px black;
+    border-radius: 10px;
+}
+  
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  
+a:link {
+    color: white;
+    text-decoration: none;
+  }
+  
+a:active {
+    color: white;
+    text-decoration: none;
+  }
+  
+nav img {
+    box-shadow: none;
+    color: rgb(221, 178, 119);
+  }
+
+nav {
+    backdrop-filter: blur(20px);
+    background-color: transparent;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+  }
+  
+nav .name {
+    display: flex;
+  }
+  
+nav p {
+    margin-left: 20px;
+    color: #e8e4e6;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 175%;
+  }
+  
+nav .navigations {
+    margin-right: 10px;
+    display: flex;
+  }
+  
+nav .navigations a {
+    margin-right: 20px;
+    padding: 10px;
+    transition: background-color 0.3s;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 150%;
+  }
+  
+nav .navigations a:hover {
+    background-color: rgba(210, 210, 210, 0.4);
+    border-radius: 10px;
+  }
+  
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    margin-right: 10px;
+  }
+
+#game {
+    border-bottom: 2px solid #abd1c6;
+  }
+
+.introduction {
+    background-image: url(static/ml.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content-wrapper {
+    width: 100%;
+    height: 100%;
+    backdrop-filter: brightness(30%);
+}
+
+.game-content .img-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+}
+
+.game-content .img-wrapper img {
+    width: 1000px;
+    height: auto;
+    box-shadow: none;
+    border-radius: 10px;
+    padding-top: 100px;
+}
+
+.mobile-legends {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(28,49,64,1) 0%, rgba(33,49,85,1) 99%);
+}
+
+.heroes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.mobile-legends img {
+    filter: brightness(90%);
+    transition: transform 0.5s;
+    box-shadow: none;
+}
+
+.mobile-legends img:hover {
+    transform: rotateX(360deg);
+}
+
+.heroes .img-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-section {
+    font-size: 100px;
+    font-family: 'Caveat', cursive;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 1000px) {
+  
+    nav .navigations {
+      display: none;  
+      flex-direction: column;
+      background-color: rgba(0, 30, 28, 0.9);
+      border-radius: 10px;
+      position: absolute;
+      margin-left: 50%;
+      margin-top: 10vh;
+      width: 50%;
+      z-index: 99;
+      text-align: center; 
+      animation-duration: 0.5s;
+    } 
+  
+    nav .navigations a {
+      padding: 2% 0%;
+      margin: 0;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+
+    .heroes {
+        grid-template-columns: 1fr;
+    }
+
+    .heroes .img-wrapper {
+        margin-bottom: 30px;
+    }
+
+    .title-section {
+        font-size: 30px;
+    }
+
+    .heroes .img-wrapper img {
+        width: 200px;
+    }
+
+    .game-content .img-wrapper img {
+        width: 300px;
+    }
+
+    .mobile-legends {
+        height: fit-content;
+    }
+}
+
+@keyframes nav-bar-open {
+    0% {
+      margin-left: 75%;
+      width: 75px;
+      height: auto;
+      font-size: 0%;
+    }
+  
+    100% {
+      margin-left: 50%;
+      width: 50%;
+      height: auto;
+    }
+  }
+  
+@keyframes nav-bar-close {
+    100% {
+      margin-left: 75%;
+      width: 90px;
+      font-size: 0px;
+      
+    }
+  
+    0% {
+      margin-left: 50%;
+      width: 50%;
+    }
+  }
+  
+@media (min-width: 1001px) {
+    .navigations {
+      display: flex;
+    }
+  }
+  

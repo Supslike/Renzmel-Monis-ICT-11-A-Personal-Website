@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed&family=Oswald&family=Bai+Jamjuree:ital@1&family=Caveat:wght@700&family=Tangerine&display=swap');
+
+* {
+    top: 0;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+  
+img {
+    box-shadow: 0px 10px 10px black;
+    border-radius: 10px;
+}
+  
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  
+a:link {
+    color: white;
+    text-decoration: none;
+  }
+  
+a:active {
+    color: white;
+    text-decoration: none;
+  }
+  
+nav img {
+    box-shadow: none;
+    color: rgb(221, 178, 119);
+  }
+
+nav {
+    backdrop-filter: blur(10px);
+    background-color: transparent;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+  }
+  
+nav .name {
+    display: flex;
+  }
+  
+nav p {
+    margin-left: 20px;
+    color: #e8e4e6;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 175%;
+  }
+  
+nav .navigations {
+    margin-right: 10px;
+    display: flex;
+  }
+  
+nav .navigations a {
+    margin-right: 20px;
+    padding: 10px;
+    transition: background-color 0.3s;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 150%;
+  }
+  
+nav .navigations a:hover {
+    background-color: rgba(210, 210, 210, 0.4);
+    border-radius: 10px;
+  }
+  
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    margin-right: 10px;
+  }
+
+#anime {
+    border-bottom: 2px solid #abd1c6;
+  }
+
+.introduction {
+    background-image: url(static/bg.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.section {
+    height: 120vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.anime-content {
+    display: flex;
+    justify-content: space-evenly;
+    height: 85%;
+}
+
+.section .anime-content {
+    height: 100%;
+}
+
+.anime-content .img-wrapper, .anime-content .information {
+    min-width: 45%;
+    max-width: 45%;
+    min-height: 100%;
+    max-height: 100%;
+}
+
+
+.anime-content .img-wrapper img {
+    width: 300px;
+    height: auto;
+}
+
+.anime-content .information, .anime-content .img-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content h2 {
+    text-align: center;
+    color: rgb(237, 237, 114);
+    text-shadow: 2px 2px black;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    text-align: center;
+    color: rgb(251, 251, 251);
+    text-shadow: 2px 2px black;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+#the-eminence-in-shadow {
+    background-image: url(static/atomic.gif);
+}
+
+#tensura {
+    background-image: url(static/tensura-bg.gif);
+}
+
+.top-button {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    position: fixed;
+    top: 0;
+  }
+  
+#top-button {
+    display: none; 
+    position: fixed; 
+    z-index: 99;
+    border: 1px solid black; 
+    cursor: pointer; 
+    font-size: 18px; 
+    margin-top: 85vh;
+    margin-right: 3%;
+    border-radius: 20px;
+    text-align: center;
+    width: 7%;
+    height: 6%;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #abd1c6;
+    background-color: rgb(0, 70, 67);
+    opacity: 0.5;
+    transition: opacity 0.5s;
+  }
+  
+#top-button:hover {
+    opacity: 1;
+  }
+
+@media (max-width: 1000px) {
+    #top-button {
+      width: 15%;
+      height: 5%;
+      opacity: 0.9;
+      margin-left: 65%;
+    }
+  
+    img {
+      box-shadow: 0px 10px 10px rgba(0, 30, 28, 0.7);
+      border-radius: 10px;
+    }
+  
+    nav .navigations {
+      display: none;  
+      flex-direction: column;
+      background-color: rgba(0, 30, 28, 0.9);
+      border-radius: 10px;
+      position: absolute;
+      margin-left: 50%;
+      margin-top: 10vh;
+      width: 50%;
+      z-index: 99;
+      text-align: center; 
+      animation-duration: 0.5s;
+    } 
+  
+    nav .navigations a {
+      padding: 2% 0%;
+      margin: 0;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+
+    .anime-content .img-wrapper img {
+        width: 150px;
+    }
+
+    .content h2 {
+        font-size: 30px;
+    }
+
+    .content p {
+        font-size: 15px;
+    }
+}
+
+@keyframes nav-bar-open {
+    0% {
+      margin-left: 75%;
+      width: 75px;
+      height: auto;
+      font-size: 0%;
+    }
+  
+    100% {
+      margin-left: 50%;
+      width: 50%;
+      height: auto;
+    }
+  }
+  
+@keyframes nav-bar-close {
+    100% {
+      margin-left: 75%;
+      width: 90px;
+      font-size: 0px;
+      
+    }
+  
+    0% {
+      margin-left: 50%;
+      width: 50%;
+    }
+  }
+  
+@media (min-width: 1001px) {
+    .navigations {
+      display: flex;
+    }
+  }
+  
