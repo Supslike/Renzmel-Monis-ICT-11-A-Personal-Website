@@ -1,6 +1,7 @@
+/* Font import */
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Oswald&family=Bai+Jamjuree:ital@1&family=Caveat:wght@700&family=Tangerine&display=swap');
 
-
+/* Removes basic CSS to avoid further issues. */
 * {
   top: 0;
   margin: 0;
@@ -8,6 +9,7 @@
   scroll-behavior: smooth;
 }
 
+/* Adds Shaddow and Border Radius */
 img {
   box-shadow: 0px 10px 10px black;
   border-radius: 10px;
@@ -401,6 +403,7 @@ nav .navigations a:hover {
   opacity: 1;
 }
 
+/* Respomsiveness */
 @media (max-width: 1000px) {
 
   #top-button {
@@ -611,6 +614,7 @@ nav .navigations a:hover {
 
 }
 
+/* Navigations Animation */
 @keyframes nav-bar-open {
   0% {
     margin-left: 75%;
